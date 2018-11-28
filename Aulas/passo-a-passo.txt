@@ -1,0 +1,38 @@
+//sequelize
+terminal -> yarn add sequelize
+terminal -> yarn add sequelize-cli -D
+terminal -> npx sequelize init
+mover pasta config para src, criar pasta database
+mover pastas migrations,seeders para database
+mover pasta models para app
+criar .sequelizerc (habilitar sintaxe JavaScript)
+mudar nome config/config.json para config/database.js
+termianl -> yarn add pg
+
+docker run --name database -p 5432:5432 -d -t kartoza/postgis
+
+criar pastas _layout,_partials,auth na views
+
+cria Models e Migrations
+npx sequelize db:migrate
+
+//cryptografar senha
+terminal -> yarn add bcryptjs
+
+//parte de uploads de arquivos
+terminal -> yarn add multer
+
+//sessão
+terminal -> arn add express-session
+//https://github.com/tj/connect-redis -> salvar a sessão fora do servidor
+//terminal -> yarn add session-file-store para salvar em arquivo físico (não recomendado)
+
+//erros internos
+terminal -> yarn add connect-flash
+//routes.use((req, res, next) => {
+  //res.locals.flashSuccess = req.flash('success')
+  //res.locals.flashError = req.flash('error')
+//})
+
+//para trabalhar com datas
+terminal -> yarn add moment
